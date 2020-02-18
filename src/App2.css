@@ -1,0 +1,130 @@
+body {
+    background-image: url('https://www.aesdes.org/wp-content/uploads/2020/01/maxresdefault.jpg');
+}
+nav {
+    display: flex;
+    background-color:transparent;
+    height: 10vh;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+ul li {
+    color: white;
+   
+}
+
+h3 {
+    color: gold;
+    font-size: 35px;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+li {
+    cursor: pointer;
+    border: black;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+img {
+    display: none;
+}
+menu {
+    background: rgb(45,51,56);
+    width: 100vw;
+    height: 200px;
+    transform: translateY(-275px);
+    transition: transform .5s;
+    z-index: 0;
+    position: relative;
+    display: none;
+}
+
+.menu-open {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-left: 3rem;
+    transform: translateY(0px);
+}
+
+.btmNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: black;
+    color: white;
+    height: 70vh;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    background-color: gold;
+    border: black;
+    font-size: 30px;
+     height: 10vh;
+     width: 30vh;
+    color: white;
+    border-radius: 8px;
+}
+
+.p2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 50vh;
+    color: black;
+}
+.ham {
+    display: none;
+    border: black;
+    height: 40px;
+    width: 43px;
+}
+
+
+
+@media (max-width:1050px) {
+    ul {
+        display:none;
+    }
+    img {
+        display: block;
+    }
+    menu {
+        display: block;
+    }
+    nav {
+        background: rgb(45,51,56);
+    }
+    .ham {
+        display: block;
+    }
+
+}
